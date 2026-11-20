@@ -1,0 +1,11 @@
+name: Python CI/CD (ROBOLDO Template)
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  python-ci:
+    uses: ROBOLDO-UERN/.github/.github/workflows/reusable-python-ci.yml@main
